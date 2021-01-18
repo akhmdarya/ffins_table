@@ -1,0 +1,158 @@
+table {
+    max-width: 1380px;
+    min-width:1370px ;
+    align-items: center;
+    justify-content: center;
+  
+    display: flex;
+    /* overflow-y: auto; */
+    border-collapse: collapse;
+    
+    /* letter-spacing: 1px; */
+   
+   
+    font-size: 0.8rem;
+  }
+  .table{
+    padding-top: 25px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    /*  */
+   
+    /* align-items: center;
+    justify-content: center;
+    
+    display: flex; */
+  }
+  
+  td, th {
+      
+    border: 0.5px solid #C9C9C9;
+    padding: 0px 15px;
+    height: 50px;
+    
+  }
+  
+  th {
+    background-color: #FFFFFF;;
+  }
+  
+  td {
+    vertical-align: center;
+      max-width: 190px;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) td {
+    background-color:  #FFFFFF;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color:#FFFFFF;
+  }
+  
+  caption {
+    padding: 10px;
+  }
+
+  .firstRow{
+      /* display: flex; */
+    vertical-align: middle;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    height: 50px;
+    color: #818181;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+  
+    
+  }
+  .contentRows{
+    
+    vertical-align: middle;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    height: 50px;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+  
+    
+    color: #000000;
+  }
+  .text-decor{
+    text-decoration-line: underline;
+  }
+  .table-elements{
+      display: flex;
+  }
+  .dots{
+      padding-left: 15px;
+  }
+
+
+  .green_status {
+    background:  #66B821;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-right: 15px;
+   
+
+}
+
+.blue_status {
+    background: #0068E2;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.red_status {
+    background: #FF2121;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+
+
+    
+
+    .table::-webkit-scrollbar-track {
+       width: 1380px;
+    
+        border-radius: 10px;
+        background: rgba(0,0,0,0.1);
+        border: 1px solid #ccc;
+    
+    }
+        
+        .table::-webkit-scrollbar {
+            height: 10px;
+            width: 10px;
+            background-color: #F5F5F5;
+     }
+        
+        .table::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: linear-gradient(left, #fff, #e4e4e4);
+            border: 1px solid #aaa; }
+
+
+            .table::-webkit-scrollbar-thumb:hover {
+                background: #fff;
+              }
+              
+              .table::-webkit-scrollbar-thumb:active {
+                background: linear-gradient(left, #22ADD4, #1E98BA);
+              }
