@@ -107,3 +107,11 @@ background: #66B821;
 border-radius: 2px;
 margin: 0 10px;
 }
+.properties-inner-report:hover{
+box-shadow: 2px 2px 4px #888;
+cursor: pointer;
+}
+    .properties-inner-props-button:hover{
+        box-shadow: 2px 2px 4px #888;
+cursor: pointer;
+    }

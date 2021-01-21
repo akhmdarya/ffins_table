@@ -50,3 +50,10 @@ table {
 html {
 	scroll-behavior: smooth;
 }
+a{text-decoration: none
+	;
+	align-items: center;
+	justify-content: center;
+color: inherit;
+display: flex;
+}

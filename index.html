@@ -36,19 +36,138 @@
                 </div>
                 <div class="properties-inner-props">
                 <button class="properties-inner-props-button">
-                    <img class="properties-inner-props__icon" src="images/settings.png"/>
+                    <img class="properties-inner-props__icon" src="images/settings.svg"/>
                     <span class="properties-inner-props-text">Свойства таблицы</span>
                 </button>
                 </div>
                 <div class="properties-inner-props">
                     <div class="properties-inner-props-button">
                     <span class="properties-inner-props-text">01.12.2021</span>
-                    <img class="properties-inner-props__icon" src="images/arrowR.png"/>
+                    <img class="properties-inner-props__icon" src="images/arrowR.svg"/>
                     <span class="properties-inner-props-text">18.12.21</span>
                     <img class="properties-inner-props__icon" src="images/calendar.jpg"/>
                     </div>
                 </div>
-                <button class="properties-inner-report">Сформировать отчет</button>
+                <button id="createReport" class="properties-inner-report">Сформировать отчет</button>
+
+                <div id="openModalReport" class="modalDialogReport">
+                  <div class="modal-content">
+                    <div class="modal_header">
+                      <h2 class="modal_header_title">Сформировать отчет</h2>
+                  <div class="close" id="closeReport"><img class="close_img"  src="images/close.svg.png"></div>
+                  </div>
+                  <div class="modal_parameter">
+                  <div class="modal_parameter_text">Дата или период
+                    </div>
+                    <div class=" report_date">
+                      <div class="report-calendar">
+                      <span class="properties-inner-props-text">01.12.2021</span>
+                      <img class="properties-inner-props__icon report_arrow" src="images/arrowR.svg"/>
+                      <span class="properties-inner-props-text">18.12.21</span>
+                      </div>
+                      <div class="report-calendar">
+                      <div class="report-calendar-delimeter" ></div>
+                      <img class="properties-inner-props__icon" src="images/calendar.jpg"/>
+                      </div>
+                      <!-- </div> -->
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Клиент
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">ИИН
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Документы
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Дата заявки
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Номер заявки
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Данные клиента
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Модель
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Серийный номер
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">IMEI
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Менеджер
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="report-parameter">
+                    <div class="modal_parameter_text">Стоимость ремонта
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                   
+                    <div class="modal_buttons_report">
+                  <button class="modal_buttons_report_text">Сформировать отчет</button>
+                  <button class="modal_but_cancel">Отмена</button>
+                  </div>
+                  </div>
+                </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -74,7 +193,7 @@
           <td class="contentRows">1</td>
           <td class="contentRows">Devon Lane</td>
           <td class="contentRows">879452342345</td>
-          <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+          <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
           <td class="contentRows">Wade Warren</td>
           <td class="contentRows text-decor">45645₸</td>
           <td class="contentRows text-decor">3223₸</td>
@@ -86,7 +205,7 @@
             <td class="contentRows">2</td>
             <td class="contentRows">Devon Lane</td>
             <td class="contentRows">879452342345</td>
-            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
             <td class="contentRows">Wade Warren</td>
             <td class="contentRows text-decor">45645₸</td>
             <td class="contentRows text-decor">3223₸</td>
@@ -98,7 +217,7 @@
             <td class="contentRows">3</td>
             <td class="contentRows">Devon Lane</td>
             <td class="contentRows">879452342345</td>
-            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
             <td class="contentRows">Wade Warren</td>
             <td class="contentRows text-decor">45645₸</td>
             <td class="contentRows text-decor">3223₸</td>
@@ -110,7 +229,7 @@
             <td class="contentRows">4</td>
             <td class="contentRows">Devon Lane</td>
             <td class="contentRows">879452342345</td>
-            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
             <td class="contentRows">Wade Warren</td>
             <td class="contentRows text-decor">45645₸</td>
             <td class="contentRows text-decor">3223₸</td>
@@ -122,7 +241,7 @@
             <td class="contentRows">5</td>
             <td class="contentRows">Devon Lane</td>
             <td class="contentRows">879452342345</td>
-            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
             <td class="contentRows">Wade Warren</td>
             <td class="contentRows text-decor">45645₸</td>
             <td class="contentRows text-decor">3223₸</td>
@@ -136,7 +255,7 @@
             <td class="contentRows">6</td>
             <td class="contentRows">Devon Lane</td>
             <td class="contentRows">879452342345</td>
-            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+            <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
             <td class="contentRows">Wade Warren</td>
             <td class="contentRows text-decor">45645₸</td>
             <td class="contentRows text-decor">3223₸</td>
@@ -148,7 +267,7 @@
               <td class="contentRows">7</td>
               <td class="contentRows">Devon Lane</td>
               <td class="contentRows">879452342345</td>
-              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
               <td class="contentRows">Wade Warren</td>
               <td class="contentRows text-decor">45645₸</td>
               <td class="contentRows text-decor">3223₸</td>
@@ -160,7 +279,7 @@
               <td class="contentRows">8</td>
               <td class="contentRows">Devon Lane</td>
               <td class="contentRows">879452342345</td>
-              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
               <td class="contentRows">Wade Warren</td>
               <td class="contentRows text-decor">45645₸</td>
               <td class="contentRows text-decor">3223₸</td>
@@ -172,7 +291,7 @@
               <td class="contentRows">9</td>
               <td class="contentRows">Devon Lane</td>
               <td class="contentRows">879452342345</td>
-              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
               <td class="contentRows">Wade Warren</td>
               <td class="contentRows text-decor">45645₸</td>
               <td class="contentRows text-decor">3223₸</td>
@@ -184,7 +303,7 @@
               <td class="contentRows">10</td>
               <td class="contentRows">Devon Lane</td>
               <td class="contentRows">879452342345</td>
-              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+              <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
               <td class="contentRows">Wade Warren</td>
               <td class="contentRows text-decor">45645₸</td>
               <td class="contentRows text-decor">3223₸</td>
@@ -196,7 +315,7 @@
                 <td class="contentRows">11</td>
                 <td class="contentRows">Devon Lane</td>
                 <td class="contentRows">879452342345</td>
-                <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.png">5</div></td>
+                <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
                 <td class="contentRows">Wade Warren</td>
                 <td class="contentRows text-decor">45645₸</td>
                 <td class="contentRows text-decor">3223₸</td>
@@ -204,14 +323,92 @@
                 <td class="contentRows"><div class="table-elements"><div class="green_status"></div>Выполнено</div></td>
                 <td class="contentRows"><div class="table-elements"><div class="blue_status"></div>В работе</div></td>
               </tr>
+
+              <tr>
+                <td class="contentRows">12</td>
+                <td class="contentRows">Devon Lane</td>
+                <td class="contentRows">879452342345</td>
+                <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
+                <td class="contentRows">Wade Warren</td>
+                <td class="contentRows text-decor">45645₸</td>
+                <td class="contentRows text-decor">3223₸</td>
+                <td class="contentRows text-decor">4560₸</td>
+                <td class="contentRows"><div class="table-elements"><div class="green_status"></div>Выполнено</div></td>
+                <td class="contentRows"><div class="table-elements"><div class="blue_status"></div>В работе</div></td>
+              </tr>
+
+              <tr>
+                <td class="contentRows">13</td>
+                <td class="contentRows">Devon Lane</td>
+                <td class="contentRows">879452342345</td>
+                <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
+                <td class="contentRows">Wade Warren</td>
+                <td class="contentRows text-decor">45645₸</td>
+                <td class="contentRows text-decor">3223₸</td>
+                <td class="contentRows text-decor">4560₸</td>
+                <td class="contentRows"><div class="table-elements"><div class="grey_status"></div>В ожидании</div></td>
+                <td class="contentRows"><div class="table-elements"><div class="green_status"></div>Выполнено</div></td>
+              </tr>
+              <tr>
+                <td class="contentRows">14</td>
+                <td class="contentRows">Devon Lane</td>
+                <td class="contentRows">879452342345</td>
+                <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
+                <td class="contentRows">Wade Warren</td>
+                <td class="contentRows text-decor">45645₸</td>
+                <td class="contentRows text-decor">3223₸</td>
+                <td class="contentRows text-decor">4560₸</td>
+                <td class="contentRows"><div class="table-elements"><div class="grey_status"></div>В ожидании</div></td>
+                <td class="contentRows"><div class="table-elements"><div class="green_status"></div>Выполнено</div></td>
+              </tr>
+              <tr>
+                <td class="contentRows">15</td>
+                <td class="contentRows">Devon Lane</td>
+                <td class="contentRows">879452342345</td>
+                <td class="contentRows text-decor"><div class="table-elements"><img class="properties-inner-props__icon" src="images/clip.svg">5</div></td>
+                <td class="contentRows">Wade Warren</td>
+                <td class="contentRows text-decor">45645₸</td>
+                <td class="contentRows text-decor">3223₸</td>
+                <td class="contentRows text-decor">4560₸</td>
+                <td class="contentRows"><div class="table-elements"><div class="grey_status"></div>В ожидании</div></td>
+                <td class="contentRows"><div class="table-elements"><div class="green_status"></div>Выполнено</div></td>
+              </tr>
             </table>
               <div class="up_button  " id="up_button">
-                <img class="up_button_img" src="images/arrowU.png"/>
+                <img class="up_button_img" src="images/up-arrow.svg"/>
             </div>
 
-            <div class="apply_button " >
+
+            
+
+            <div class="apply_button"  id="apply_button">
                 <img class="apply_button_img" src="images/plus.png"/>
                 <span class="apply_button_text">Новая заявка</span>
+            </div>
+
+            <div id="openModal" class="modalDialog">
+              <div class="modal-content">
+                <div class="modal_header">
+                  <h2 class="modal_header_title">НОВАЯ ЗАЯВКА</h2>
+              <div class="close" id="close"><img class="close_img"  src="images/close.svg.png"></div>
+              </div>
+              <div class="modal_parameter">
+              <div class="modal_parameter_text">ИИН
+                </div>
+                <input class="modal_input" type="text" placeholder="ИИН"/>
+                <div class="modal_parameter_text">IMEI номер
+                </div>
+                <input class="modal_input" type="text" placeholder="IMEI номер"/>
+                <div class="modal_parameter_text">Стоимость ремонта
+                </div>
+                <input class="modal_input" type="text" placeholder="Стоимость ремонта"/>
+                <button class="modal_parameter_button">Проверить</button>
+                <div class="modal_buttons">
+              <button class="modal_but_create">Создать</button>
+              <button class="modal_but_cancel">Отмена</button>
+              </div>
+              </div>
+            </div>
             </div>
      
     </section>
@@ -220,4 +417,5 @@
    
         
 </body>
+<script type="text/javascript" src="js/modal.js"></script>
 </html>
