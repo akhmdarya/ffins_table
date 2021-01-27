@@ -32,7 +32,7 @@
             <div class="properties-inner-components">
                 <div class="properties-inner-search">
                     <input class="properties-inner-search__input" type="text" placeholder="Поиск..."/>
-					<img class="properties-inner-search__icon" src="images/search.png"/>
+					<img class="properties-inner-search__icon" src="images/search.svg"/>
                 </div>
                 <div class="properties-inner-props">
                 <button class="properties-inner-props-button">
@@ -40,12 +40,12 @@
                     <span class="properties-inner-props-text">Свойства таблицы</span>
                 </button>
                 </div>
-                <div class="properties-inner-props">
-                    <div class="properties-inner-props-button">
+                <div class="properties-inner-props ">
+                    <div class="properties-inner-props-button calendar-form">
                     <span class="properties-inner-props-text">01.12.2021</span>
-                    <img class="properties-inner-props__icon" src="images/arrowR.svg"/>
+                    <img class="properties-inner-props__icon calendar-arrow" src="images/arrowR.svg"/>
                     <span class="properties-inner-props-text">18.12.21</span>
-                    <img class="properties-inner-props__icon" src="images/calendar.jpg"/>
+                    <img class="properties-inner-props__icon calendar-img" src="images/calendar.svg"/>
                     </div>
                 </div>
                 <button id="createReport" class="properties-inner-report">Сформировать отчет</button>
@@ -61,9 +61,9 @@
                     </div>
                     <div class=" report_date">
                       <div class="report-calendar">
-                      <span class="properties-inner-props-text">01.12.2021</span>
+                      <span class="properties-inner-props-text" id="date_from">01.12.2021</span>
                       <img class="properties-inner-props__icon report_arrow" src="images/arrowR.svg"/>
-                      <span class="properties-inner-props-text">18.12.21</span>
+                      <span class="properties-inner-props-text" id="date_until">18.12.21</span>
                       </div>
                       <div class="report-calendar">
                       <div class="report-calendar-delimeter" ></div>
@@ -75,7 +75,7 @@
                     <div class="modal_parameter_text">Клиент
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="client" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -83,7 +83,7 @@
                     <div class="modal_parameter_text">ИИН
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="IIN" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -91,7 +91,7 @@
                     <div class="modal_parameter_text">Документы
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="docs" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -99,7 +99,7 @@
                     <div class="modal_parameter_text">Дата заявки
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="date_of_report" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -107,7 +107,7 @@
                     <div class="modal_parameter_text">Номер заявки
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="number_of_report" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -115,7 +115,7 @@
                     <div class="modal_parameter_text">Данные клиента
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="client_data" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -123,7 +123,7 @@
                     <div class="modal_parameter_text">Модель
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="model" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -131,7 +131,7 @@
                     <div class="modal_parameter_text">Серийный номер
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="serial_number" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -139,7 +139,7 @@
                     <div class="modal_parameter_text">IMEI
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="IMEI" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -147,7 +147,7 @@
                     <div class="modal_parameter_text">Менеджер
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="manager" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
@@ -155,14 +155,14 @@
                     <div class="modal_parameter_text">Стоимость ремонта
                     </div>
                     <label class="switch">
-                      <input type="checkbox">
+                      <input id="repair_cost" type="checkbox">
                       <span class="slider round"></span>
                     </label>
                   </div>
                    
                     <div class="modal_buttons_report">
-                  <button class="modal_buttons_report_text">Сформировать отчет</button>
-                  <button class="modal_but_cancel">Отмена</button>
+                  <button class="modal_buttons_report_text" onclick="addReport()">Сформировать отчет</button>
+                  <button class="modal_but_cancel" id="cancelReport">Отмена</button>
                   </div>
                   </div>
                 </div>
@@ -374,7 +374,7 @@
                 <td class="contentRows"><div class="table-elements"><div class="green_status"></div>Выполнено</div></td>
               </tr>
             </table>
-              <div class="up_button  " id="up_button">
+              <div class="up_button  hidden" id="up_button">
                 <img class="up_button_img" src="images/up-arrow.svg"/>
             </div>
 
@@ -418,4 +418,5 @@
         
 </body>
 <script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/up_button.js"></script>
 </html>

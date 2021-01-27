@@ -47,9 +47,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html {
+/* html {
 	scroll-behavior: smooth;
-}
+} */
 a{text-decoration: none
 	;
 	align-items: center;
@@ -57,3 +57,12 @@ a{text-decoration: none
 color: inherit;
 display: flex;
 }
+/* button:active {
+	
+	border-color: rgb(214, 6, 6) !important;
+   border-radius:0px;
+   color: inherit
+   ;
+   color: white;
+   
+   } */

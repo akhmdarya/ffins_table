@@ -33,7 +33,7 @@ color: #000000;
 }
 
     .properties-inner-search__input {
-        /*padding: 7px;*/
+        padding: 0px 15px;
         color: #737373;
         font-size: 15px;
         
@@ -73,7 +73,16 @@ border-radius: 2px;
     height: 100%;
     align-items: center;
     display: flex;
-    padding: 0 10px;
+    padding: 0 10.25px;
+    }
+    .calendar-form{
+        padding-left: 16px;
+    }
+    .calendar-img{
+        padding-left: 26px; 
+    }
+    .calendar-arrow{
+        padding: 0px 10px;
     }
     .properties-inner-props__icon{
         width :16px;

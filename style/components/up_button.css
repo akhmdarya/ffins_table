@@ -15,12 +15,12 @@
     background: #FFFFFF;
     justify-content: center;
     align-items: center;
-    animation: show 1s ease-in !important;
+    animation: show 1.5s ease-in !important;
     z-index: 100;
 }
 .up_button.hidden{
     animation: hide 1.5s ease-in;
-    left: -30%;
+    right:  150px;
 }
 .up_button_img{
     position: absolute;
@@ -30,4 +30,31 @@
 .up_button:hover{
     box-shadow: 2px 2px 4px #888;
     cursor: pointer;
+}
+
+
+
+.up_button_img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes show{
+    0%{
+        left:  -10%;
+    }
+    100%{
+        left: 150px;
+    }
+}
+
+@keyframes hide{
+    0%{
+        left: 150px;
+    }
+    100%{
+        left:  -10%;
+        display: none;
+    }
 }

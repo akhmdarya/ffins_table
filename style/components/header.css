@@ -21,27 +21,30 @@
 .header-logo{
     display: flex;
     align-items: center;
+    width: 176px;
+    height: 26.23px;
 }
 
 .logo-img{
 background: url(../../images/logo.svg)  no-repeat;
     background-size: 100%;
-    width: 138px;
-    height: 36px;
+    width: 99.82px;
+    height: 26.01px;
     position: relative;
 }
 .logo-slogan{
     background: url(../../images/slogan.svg) right no-repeat;
-    width: 90px;
-    height: 13px;
+    background-size: 100%;
+    width: 54.32px;
+    height: 9.13px;
     position: relative;
     margin-left: 15px;
   
     }
     .logo-slogan::before{
-        left: 0;
+        left: -6px;
         content: '';
-        height: 36px;
+        height: 26px;
         width: 1px;
         background: #CFCFCF;
         position: absolute;

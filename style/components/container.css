@@ -1,6 +1,6 @@
 .container{
-   /* width: 100%; */
-   padding: 25px;;
+   /* по 30px по бокам , 17 по верху-низу */
+   padding: 12px 25px; 
     position: relative;
     
     text-align: center;
